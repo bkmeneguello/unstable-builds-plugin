@@ -1,0 +1,2 @@
+<?jelly escape-by-default='true'?>
+<img width="16" height="16" title="${%Ignored Tests(it.count)}" alt="${it.displayName}" src="${rootURL}${it.iconFileName}"/>

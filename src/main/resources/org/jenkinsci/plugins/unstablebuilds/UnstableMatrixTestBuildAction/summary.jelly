@@ -1,0 +1,9 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+<h2>Instabilidades</h2>
+<j:forEach var="run" items="${it.runs}">
+<p>
+  <a href="${rootURL}/${run.url}"><img src="${rootURL}${it.worstIcon(run)}" height="16" width="16" style="margin-right:4px" />${run.project.displayName}</a>
+</p>
+</j:forEach>
+</j:jelly>
